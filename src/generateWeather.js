@@ -1,5 +1,5 @@
 import createWeatherNode from "./infoAppender";
-
+const content = document.querySelector('#content');
 const APIKEY = 'ae6cff0c5dec4b33010703d6fac46a44';
 
 const Location = (name, temperature, weatherDescription) => {
@@ -14,14 +14,12 @@ async function getLocationResponse(location)
     return response;
 }
 
-
-
-function getLocationWeatherInformation(location)
+function getLocationWeatherInformation(location, node)
 {
     (async () => {
         const p = await getLocationResponse(location);
         const newLocation = Location(p.name, p.main.temp, p.weather[0].description);
-        createWeatherNode(document.body, newLocation);
+        createWeatherNode(node, newLocation);
     })();  
 }
 

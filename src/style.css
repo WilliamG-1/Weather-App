@@ -1,3 +1,38 @@
-body {
-    background-color: red;
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    min-height: 100vh;
+    padding: 100px;
+    background-color: rgb(112, 115, 126);
+}
+
+.searchContainer {
+    display: flex;
+    column-gap: 5px;
+    flex-wrap: none;
+}
+.weatherCard {
+    box-shadow: 0 0 1px;
+    background-color: rgb(209, 209, 209);
+    padding: 10px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cardName {
+    font-size: 60px;
+}
+#cardTemperature {
+    font-size: 75px;
+    font-weight: 800;
+}
+#cardDescription {
+    font-size: 50px;
 }

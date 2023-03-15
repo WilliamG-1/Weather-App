@@ -6,6 +6,11 @@ function createWeatherNode(parentNode, object)
     const name = document.createElement('h2');
     const temperature = document.createElement('div');
     const description = document.createElement('h4');
+
+    name.setAttribute('id', 'cardName');
+    temperature.setAttribute('id', 'cardTemperature');
+    description.setAttribute('id', 'cardDescription');
+
     name.textContent = object.name;
     temperature.textContent = object.temperature;
     description.textContent = object.weatherDescription;
