@@ -18,6 +18,10 @@ body{
     column-gap: 5px;
     flex-wrap: none;
 }
+.searchButton *{
+    height: 20px;
+    width: 20px;
+}
 .weatherCard {
     box-shadow: 0 0 1px;
     background-color: rgb(209, 209, 209);
