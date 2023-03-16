@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+:root {
+    font-family: 'Comfortaa', cursive;
+}
 body{
     padding: 0;
     margin: 0;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 10px;
+}
 #content {
     display: flex;
     flex-direction: column;
@@ -12,18 +23,32 @@ body{
     padding: 100px;
     background-color: rgb(112, 115, 126);
 }
-
+label[for='searchBar'] {
+}
 .searchContainer {
+    background-color: wheat;
     display: flex;
+    align-items: center;
     column-gap: 5px;
     flex-wrap: none;
+    max-width: 700px;
+}
+.searchButton {
+    
 }
 .searchButton *{
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
 }
+#searchBar {
+    flex: 1;
+    height: 50px;
+    flex-basis: 600px;
+}
+
 .weatherCard {
-    box-shadow: 0 0 1px;
+    box-shadow: 0 0 3px;
+    border-radius: 5px;
     background-color: rgb(209, 209, 209);
     padding: 10px 70px;
     display: flex;
