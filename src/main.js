@@ -1,12 +1,12 @@
 import './style.css';
 import getLocationWeatherInformation from './generateWeather';
 import s from './assets/search.svg';
-
+import cloudyA from './assets/cloudyA.svg'
 const mainWeatherInfo = document.querySelector('#mainWeather');
 const searchButton = document.querySelector('#searchButton');
 const searchBar = document.querySelector('#searchBar');
 const form = document.querySelector('form');
-getLocationWeatherInformation('London', mainWeatherInfo);
+getLocationWeatherInformation('Los Angeles', mainWeatherInfo);
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();

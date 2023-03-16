@@ -11,6 +11,7 @@ async function getLocationResponse(location)
     const apiRequest = `https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${APIKEY}`;
     const promise = await fetch(apiRequest, {mode: 'cors'});
     const response = await promise.json();
+    console.log(response);
     return response;
 }
 
